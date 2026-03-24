@@ -14,5 +14,7 @@ export default defineConfig({
   },
   server: {
     port: 8002,
+  }, optimizeDeps: {
+    include: ['@clerk/clerk-react','@repo/api-core','@repo/shared-types'],
   },
 })
