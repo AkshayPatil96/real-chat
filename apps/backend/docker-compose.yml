@@ -1,0 +1,109 @@
+version: '3.8'
+
+services:
+  # ========================================
+  # MongoDB Database
+  # ========================================
+  mongodb:
+    image: mongo:7
+    container_name: realchat-mongo
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: adminpassword
+      MONGO_INITDB_DATABASE: realchat
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - realchat-network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ========================================
+  # Redis (for presence system)
+  # ========================================
+  redis:
+    image: redis:7-alpine
+    container_name: realchat-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - realchat-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ========================================
+  # Backend API
+  # ========================================
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: realchat-backend
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      # Node
+      NODE_ENV: production
+      PORT: 3001
+      
+      # MongoDB
+      MONGO_URI: mongodb://admin:adminpassword@mongodb:27017/realchat?authSource=admin
+      
+      # Redis
+      REDIS_URL: redis://redis:6379
+      
+      # CORS
+      CORS_ORIGIN: http://localhost:5173
+      
+      # Clerk (Replace with your actual keys)
+      CLERK_PUBLISHABLE_KEY: ${CLERK_PUBLISHABLE_KEY}
+      CLERK_SECRET_KEY: ${CLERK_SECRET_KEY}
+      CLERK_WEBHOOK_SECRET: ${CLERK_WEBHOOK_SECRET}
+      
+      # Sentry (Optional)
+      SENTRY_DSN: ${SENTRY_DSN:-}
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - realchat-network
+    volumes:
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3001/health', (r) => {if (r.statusCode !== 200) throw new Error()})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+# ========================================
+# Networks
+# ========================================
+networks:
+  realchat-network:
+    driver: bridge
+
+# ========================================
+# Volumes
+# ========================================
+volumes:
+  mongodb_data:
+    driver: local
+  redis_data:
+    driver: local

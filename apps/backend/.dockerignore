@@ -1,0 +1,55 @@
+# Dependencies
+node_modules
+pnpm-lock.yaml
+
+# Build outputs
+dist
+build
+*.log
+
+# Development files
+.env
+.env.local
+.env.development
+*.test.ts
+*.spec.ts
+__tests__
+coverage
+
+# Git
+.git
+.gitignore
+.github
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Documentation
+*.md
+!README.md
+docs
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Misc
+.prettierrc
+.eslintrc
+tsconfig.json
+jest.config.js

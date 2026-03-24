@@ -1,0 +1,17 @@
+{
+  "extends": "@repo/config/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "allowJs": true,
+    "checkJs": false,
+    "noImplicitAny": true,
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
