@@ -9,12 +9,12 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, './src'), "@repo/api-core": path.resolve(__dirname, "../../packages/api-core/src")
     },
   },
   server: {
     port: 8002,
   }, optimizeDeps: {
-    include: ['@clerk/clerk-react','@repo/api-core','@repo/shared-types'],
+    include: ['@clerk/clerk-react', '@repo/api-core', '@repo/shared-types'],
   },
 })

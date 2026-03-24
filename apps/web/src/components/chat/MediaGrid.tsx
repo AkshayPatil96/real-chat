@@ -1,7 +1,10 @@
-import { useCallback, useRef, useEffect, useState } from 'react';
-import { useGetConversationMediaQuery, type MediaItem } from '@/store/api/mediaApi';
-import { getPublicUrl } from '@/lib/mediaUtils';
-import { Loader2, Image as ImageIcon } from 'lucide-react';
+import { useCallback, useRef, useEffect, useState } from "react";
+import {
+  useGetConversationMediaQuery,
+  type MediaItem,
+} from "@/store/api/mediaApi";
+import { getPublicUrl } from "@/lib/mediaUtils";
+import { Loader2, Image as ImageIcon } from "lucide-react";
 
 interface MediaGridProps {
   conversationId: string;
@@ -15,12 +18,11 @@ interface MediaGridProps {
 export function MediaGrid({ conversationId, onImageClick }: MediaGridProps) {
   const [cursor, setCursor] = useState<string | undefined>(undefined);
   const allItemsRef = useRef<MediaItem[]>([]);
-  const [, forceUpdate] = useState({});
   const observerTarget = useRef<HTMLDivElement>(null);
 
   const { data, isLoading, isFetching } = useGetConversationMediaQuery({
     conversationId,
-    type: 'all', // Get both images and videos
+    type: "all", // Get both images and videos
     cursor,
     limit: 20,
   });
@@ -42,7 +44,7 @@ export function MediaGrid({ conversationId, onImageClick }: MediaGridProps) {
         setCursor(data.nextCursor);
       }
     },
-    [data, isFetching]
+    [data, isFetching],
   );
 
   useEffect(() => {
@@ -69,7 +71,7 @@ export function MediaGrid({ conversationId, onImageClick }: MediaGridProps) {
 
   // Filter to only media types (image/video)
   const mediaItems = allItems.filter(
-    (item) => item.type === 'image' || item.type === 'video'
+    (item) => item.type === "image" || item.type === "video",
   );
 
   if (mediaItems.length === 0) {
@@ -86,14 +88,14 @@ export function MediaGrid({ conversationId, onImageClick }: MediaGridProps) {
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
         {mediaItems.map((item) => {
           const url = getPublicUrl(item.fileKey);
-          
+
           return (
             <div
               key={item.messageId}
               className="aspect-square relative cursor-pointer group overflow-hidden rounded-md bg-muted"
               onClick={() => onImageClick?.(item.messageId)}
             >
-              {item.type === 'image' && url && (
+              {item.type === "image" && url && (
                 <img
                   src={url}
                   alt="Media"
@@ -101,7 +103,7 @@ export function MediaGrid({ conversationId, onImageClick }: MediaGridProps) {
                   loading="lazy"
                 />
               )}
-              {item.type === 'video' && url && (
+              {item.type === "video" && url && (
                 <div className="relative w-full h-full">
                   <video
                     src={url}
@@ -121,7 +123,10 @@ export function MediaGrid({ conversationId, onImageClick }: MediaGridProps) {
       </div>
 
       {/* Infinite scroll trigger */}
-      <div ref={observerTarget} className="h-4 mt-4" />
+      <div
+        ref={observerTarget}
+        className="h-4 mt-4"
+      />
 
       {isFetching && (
         <div className="flex justify-center py-4">

@@ -55,3 +55,54 @@
 {"level":30,"time":"2026-03-24T15:04:09.877Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 joined conversation 6974bb55a4ae677f11cf749d"}
 {"level":30,"time":"2026-03-24T15:04:10.781Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 joined conversation 6974bb55a4ae677f11cf749d"}
 {"level":40,"time":"2026-03-24T15:07:52.726Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","message":"Can't find / on this server!","statusCode":404,"msg":"Operational Error"}
+{"level":30,"time":"2026-03-24T15:28:15.307Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:28:15.318Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:28:15.343Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now offline"}
+{"level":30,"time":"2026-03-24T15:28:15.353Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now offline"}
+{"level":30,"time":"2026-03-24T15:28:23.114Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:28:23.175Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now online"}
+{"level":30,"time":"2026-03-24T15:28:24.329Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:28:24.389Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now online"}
+{"level":30,"time":"2026-03-24T15:29:38.320Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:29:38.356Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now offline"}
+{"level":30,"time":"2026-03-24T15:29:38.391Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 joined conversation 6974bb55a4ae677f11cf749d"}
+{"level":30,"time":"2026-03-24T15:29:38.422Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:29:38.458Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now offline"}
+{"level":30,"time":"2026-03-24T15:29:43.144Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:29:43.203Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now online"}
+{"level":30,"time":"2026-03-24T15:29:43.567Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:29:43.627Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now online"}
+{"level":30,"time":"2026-03-24T15:29:50.745Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:29:50.780Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now offline"}
+{"level":30,"time":"2026-03-24T15:29:51.238Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:29:51.273Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now offline"}
+{"level":30,"time":"2026-03-24T15:29:53.393Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:29:53.452Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now online"}
+{"level":30,"time":"2026-03-24T15:29:53.997Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:29:54.056Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now online"}
+{"level":30,"time":"2026-03-24T15:29:59.801Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:29:59.840Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:29:59.840Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now offline"}
+{"level":30,"time":"2026-03-24T15:29:59.875Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now offline"}
+{"level":30,"time":"2026-03-24T15:30:05.240Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:30:05.299Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now online"}
+{"level":30,"time":"2026-03-24T15:30:05.319Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:30:05.380Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now online"}
+{"level":30,"time":"2026-03-24T15:30:29.284Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:30:29.298Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:30:29.320Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now offline"}
+{"level":30,"time":"2026-03-24T15:30:29.333Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now offline"}
+{"level":30,"time":"2026-03-24T15:30:33.159Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:30:33.219Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now online"}
+{"level":30,"time":"2026-03-24T15:30:34.118Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:30:34.179Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now online"}
+{"level":30,"time":"2026-03-24T15:32:12.327Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 joined conversation 6974bb55a4ae677f11cf749d"}
+{"level":30,"time":"2026-03-24T15:32:14.771Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 joined conversation 6974bb55a4ae677f11cf749d"}
+{"level":30,"time":"2026-03-24T15:36:21.343Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:36:21.378Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now offline"}
+{"level":30,"time":"2026-03-24T15:36:21.418Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User disconnected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:36:21.453Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now offline"}
+{"level":30,"time":"2026-03-24T15:36:24.867Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T15:36:24.870Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974ac8c453a13b234432ed7"}
+{"level":30,"time":"2026-03-24T15:36:24.923Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now online"}
+{"level":30,"time":"2026-03-24T15:36:24.924Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974ac8c453a13b234432ed7 is now online"}

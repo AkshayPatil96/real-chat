@@ -1,6 +1,6 @@
 import { useCallback, useRef, useEffect, useState } from 'react';
 import { useGetConversationMediaQuery } from '@/store/api/mediaApi';
-import { getPublicUrl, getFileName, getFileIcon } from '@/lib/mediaUtils';
+import { getPublicUrl, getFileName } from '@/lib/mediaUtils';
 import { Loader2, FileText, Download } from 'lucide-react';
 import { format } from 'date-fns';
 
