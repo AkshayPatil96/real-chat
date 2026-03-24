@@ -1,0 +1,7 @@
+{"level":30,"time":"2026-03-24T14:48:46.497Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"Connected to MongoDB with connection pool (maxPoolSize: 10, minPoolSize: 2)"}
+{"level":30,"time":"2026-03-24T14:48:46.569Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"Connected to Redis"}
+{"level":30,"time":"2026-03-24T14:48:46.573Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"Socket.IO initialized successfully"}
+{"level":30,"time":"2026-03-24T14:48:46.573Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"Server running on port development mode"}
+{"level":30,"time":"2026-03-24T14:49:00.749Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User connected: 6974bafd453a13b234432f41"}
+{"level":30,"time":"2026-03-24T14:49:00.811Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 is now online"}
+{"level":30,"time":"2026-03-24T14:49:01.433Z","pid":28568,"hostname":"DESKTOP-2U4AJ3R","msg":"User 6974bafd453a13b234432f41 joined conversation 6974bb55a4ae677f11cf749d"}
