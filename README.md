@@ -1,4 +1,4 @@
-# Chat App Monorepo
+# Real-Chat App Monorepo
 
 This is a production-ready monorepo infrastructure for a chat application.
 
