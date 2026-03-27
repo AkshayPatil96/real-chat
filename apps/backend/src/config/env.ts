@@ -39,7 +39,7 @@ interface Config {
  */
 const config: Config = {
   env: process.env.NODE_ENV || 'development',
-  port: parseInt(process.env.PORT || '3001', 10),
+  port: parseInt(process.env.PORT || '5000', 10),
   db: {
     uri: process.env.MONGO_URI || 'mongodb://localhost:27017/chat-app',
   },

@@ -91,7 +91,17 @@ app.use(helmet({
 }));
 
 // CORS configuration
-app.use(cors({ origin: config.cors.origin, credentials: true }));
+const allowedOrigins = config.cors.origin.split(",");
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
 
 // Production Hardening: Global rate limiting (100 req/15min per IP)
 app.use(globalLimiter);
