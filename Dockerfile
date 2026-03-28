@@ -26,6 +26,8 @@ RUN pnpm turbo run build --filter=backend...
 FROM node:20-alpine AS runner
 WORKDIR /app
 
+RUN apk add --no-cache curl
+
 ENV NODE_ENV=production
 
 RUN corepack enable
