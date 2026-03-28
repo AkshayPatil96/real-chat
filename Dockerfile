@@ -7,7 +7,6 @@ RUN corepack enable
 FROM base AS deps
 
 COPY package.json pnpm-lock.yaml turbo.json pnpm-workspace.yaml ./
-
 COPY apps ./apps
 COPY packages ./packages
 
@@ -19,23 +18,23 @@ FROM base AS builder
 
 COPY --from=deps /app /app
 
-# Build ONLY backend (important)
+# Build ONLY backend
 RUN pnpm turbo run build --filter=backend...
 
 # ---------- Runner ----------
 FROM node:20-alpine AS runner
 WORKDIR /app
 
+# 🔥 ONLY required runtime deps
 RUN apk add --no-cache curl
 
 ENV NODE_ENV=production
 
-RUN corepack enable
-RUN corepack prepare pnpm@latest --activate
+# 🔥 NO corepack / pnpm install here
 
-# Copy only necessary files
+# Copy built app + node_modules
 COPY --from=builder /app /app
 
 EXPOSE 5000
 
-CMD ["pnpm", "--filter", "backend", "start"]
+CMD ["node", "apps/backend/dist/server.js"]
